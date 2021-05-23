@@ -13,11 +13,11 @@ const btn={
     color:'white',
     width:'120px',
     height:'40px',
-    fontSize:'20px'
+    fontSize:'20px',
 }
 const divcss={
     textAlign:"center",
-    border:'1px solid black',
+    //border:'1px solid black',
     width:'47%',
     height:'94vh',
     marginTop:'5px',
@@ -27,7 +27,6 @@ const divcss={
 class Form extends Component {
     render() {
         return (
-            <div>
             <div style={divcss}>
                 <h2>Sign-In</h2>
               <form>
@@ -43,7 +42,6 @@ class Form extends Component {
                 <br></br>
                 <p>Forgotten password?</p> 
                 <p>or connect with</p>
-            </div>
             </div>
         )
     }
