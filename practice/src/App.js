@@ -7,9 +7,9 @@ import LeftDiv from './components/LeftDiv';
 function App() {
   return (
     <div className="App">
-      <LeftDiv/>
-     <Form/>
-  
+     {/*} <LeftDiv/>
+     <Form/> */}
+    <Footer/>
     </div>
   );
 }
