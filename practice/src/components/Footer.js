@@ -1,15 +1,70 @@
 import React from 'react'
-const div={
-    width:'100%',
-    height:'35px',
-    backgroundColor:'green',
-    color:'white',
-    margin:'0px 15px',
-}
-export default function Footer() {
+import './formcss.css'
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import EmailIcon from '@material-ui/icons/Email';
+import CallIcon from '@material-ui/icons/Call';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+function Footer() {
     return (
-        <div style={div}>
-            <h3>All rights reserved by kabadi techno pvt limited</h3>
+        <div>
+        <div className="form">
+            <form className="formstyle">
+                <label>Username</label>
+                <br></br>
+                <input type='text' placeholder='username' name='Username' id='inputs'/>
+                <br></br>
+                <label>Password</label>
+                <br></br>
+                <input type='passward' placeholder='passward' name='Password' id='inputs'/>
+                <br></br>
+                <label>Select Course</label>
+                <br></br>
+               <select name='Select Course' id='inputs'>
+                   <option>Computer Science</option>
+                   <option>Electronics</option>
+               </select>
+            </form>
+        </div>
+        <div className="main-footer">
+            <div className='footerlist'>
+            <ul className="list">
+                <li className="mainheading"><b>ABOUT US</b></li>
+                <li>Our Mission</li>
+                <li>Our Vision</li>
+                <li>Our Team</li>
+                <li>What We Do</li>
+            </ul>
+        </div>
+        <div className='footerlist'>
+            <ul className="list">
+                <li className="mainheading"><b>Important Links</b></li>
+                <li>Sell your Scarp</li>
+                <li>Join Your Team</li>
+                <li>Terms of Use</li>
+                <li>Privacy Policy</li>
+        </ul>
+        </div>
+        <div className='footerlist'>
+            <ul className="list">
+                <li className="mainheading"><b>Contract US</b></li>
+                <li><LocationOnIcon/> 16, South Arjun Nagar,Agra</li>
+                <li><EmailIcon/> Info@Kabaditeachno.com</li>
+                <li><CallIcon/><small> +91 9897063955 ,</small><small>+91 9897063955</small></li>
+                
+        </ul>
+        </div>
+        <h1 className="mainheading"><b>CONNECT WITH US</b></h1>
+        <div className="icons">
+        <FacebookIcon style={{fontSize:"45px", margin:"5px 20px"}}/>
+        <InstagramIcon style={{fontSize:"45px", margin:"5px 20px"}}/>
+        <LinkedInIcon style={{fontSize:"45px", margin:"5px 20px"}}/>
+        </div>
+        <h2 className="lastheading">All Rights Reseverd by Kabadi Techno Private Limited</h2>
+        </div>
         </div>
     )
 }
+
+export default Footer
