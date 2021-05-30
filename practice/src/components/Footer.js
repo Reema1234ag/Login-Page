@@ -6,6 +6,7 @@ import CallIcon from '@material-ui/icons/Call';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+const icons={fontSize:"50px", margin:"9px 22px", marginBottom:'54px'}
 function Footer() {
     return (
         <div>
@@ -28,6 +29,7 @@ function Footer() {
             </form>
         </div>
         <div className="main-footer">
+            <div className='div1'>
             <div className='footerlist'>
             <ul className="list">
                 <li className="mainheading"><b>ABOUT US</b></li>
@@ -36,32 +38,36 @@ function Footer() {
                 <li>Our Team</li>
                 <li>What We Do</li>
             </ul>
-        </div>
-        <div className='footerlist'>
+            </div>
+            <div className='footerlist'>
             <ul className="list">
                 <li className="mainheading"><b>Important Links</b></li>
                 <li>Sell your Scarp</li>
                 <li>Join Your Team</li>
                 <li>Terms of Use</li>
                 <li>Privacy Policy</li>
-        </ul>
-        </div>
-        <div className='footerlist'>
+            </ul>
+            </div>
+            <div className='footerlist'>
             <ul className="list">
-                <li className="mainheading"><b>Contract US</b></li>
-                <li><LocationOnIcon/> 16, South Arjun Nagar,Agra</li>
-                <li><EmailIcon/> Info@Kabaditeachno.com</li>
-                <li><CallIcon/><small> +91 9897063955 ,</small><small>+91 9897063955</small></li>
+                <li className="mainheading"><b>Contact US</b></li>
+                <li><LocationOnIcon style={{fontSize:"28px"}}/> 16, South Arjun Nagar,Agra</li>
+                <li><EmailIcon style={{fontSize:"28px"}}/> Info@Kabaditeachno.com</li>
+                <li><CallIcon style={{fontSize:"28px"}}/><small> +91 9897063955 ,</small><small>+91 9897063955</small></li>
                 
-        </ul>
-        </div>
-        <h1 className="mainheading"><b>CONNECT WITH US</b></h1>
-        <div className="icons">
-        <FacebookIcon style={{fontSize:"45px", margin:"5px 20px"}}/>
-        <InstagramIcon style={{fontSize:"45px", margin:"5px 20px"}}/>
-        <LinkedInIcon style={{fontSize:"45px", margin:"5px 20px"}}/>
-        </div>
-        <h2 className="lastheading">All Rights Reseverd by Kabadi Techno Private Limited</h2>
+            </ul>
+            </div>
+            </div>
+            <div className="contact">
+            <h1>Connect with us</h1>
+            <div className="icons">
+            <FacebookIcon style={icons}/>
+            <InstagramIcon style={icons}/>
+            <LinkedInIcon style={icons}/>
+            <h2 className="lastheading">All Rights Reseverd by Kabadi Techno Private Limited</h2>
+            </div>
+            </div>
+       
         </div>
         </div>
     )
