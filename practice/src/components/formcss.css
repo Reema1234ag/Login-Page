@@ -12,10 +12,15 @@
     margin-top:'20px';
     border:1px solid yellow;
     width:100%;
-    height: 678px;
-    background-image: url('../images/footer\ 2.png');
+    height: 680px;
     text-align: center;
     }
+.main-img{
+    width:100%;
+    height: 100%;
+    background-image: url('../images/footer\ 2.png');
+    background-size: cover;
+}
 .div1{
     width:100%;
     height: 380px;
@@ -56,17 +61,88 @@ h1{
 }
 .contact{
     text-align: center;
-  
+
     float: left;
     width:100%;
 }
 .icons{
     color:white;
-   
+
+    margin-bottom: 54px;
 }
 .lastheading{
     color:white;
 }
-@media(max-width:1665px)and (min-width:1231px){
+@media(max-width:1450px)and (min-width:980px){
+    .main-footer{
+        margin-left:'5px';
+        margin-top:'20px';
+        border:1px solid yellow;
+        width:100%;
+        height: 680px;
+        text-align: center;
+        }
+    .list{
+        color:white;
+        font-size:22px;
+        float:left;
+        margin:100px 40px;
+        list-style: none;
+        line-height: 35px;
+    }
+    .mainheading{
+        color:green;
+        font-size: 30px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+    .contact h1{
+        color:green;
+        text-transform: uppercase;
+        font-size: 35px;
+        
+    }
+    .main-img{
+        width:100%;
+        height: 100%;
+        background-image: url('../images/footer\ 2.png');
+        background-size: cover;
+    }
+    .icons{
+        color:white;
+         margin-bottom: 110px;
+    }
 }
- 
+@media(max-width:979px)and (min-width:500px){
+    .list{
+        color:white;
+        font-size:22px;
+        float:left;
+        margin-top: 85px;
+        margin-bottom: 10px;
+        list-style: none;
+        line-height: 40px;
+        margin-left: 25px;
+        margin-right: 20px;
+    }
+    .mainheading{
+        color:green;
+        font-size: 25px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+    .contact h1{
+        color:green;
+        text-transform: uppercase;
+        font-size: 30px;
+        
+    }
+    .main-footer{
+        margin-left:'5px';
+        margin-top:'20px';
+        border:1px solid yellow;
+        width:100%;
+        height: 600px;
+        text-align: center;
+        }
+    }

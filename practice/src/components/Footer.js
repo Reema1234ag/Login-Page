@@ -6,7 +6,7 @@ import CallIcon from '@material-ui/icons/Call';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-const icons={fontSize:"50px", margin:"9px 22px", marginBottom:'54px'}
+const icons={fontSize:"50px", margin:"9px 22px"}
 function Footer() {
     return (
         <div>
@@ -29,6 +29,7 @@ function Footer() {
             </form>
         </div>
         <div className="main-footer">
+            <div className="main-img">
             <div className='div1'>
             <div className='footerlist'>
             <ul className="list">
@@ -64,10 +65,10 @@ function Footer() {
             <FacebookIcon style={icons}/>
             <InstagramIcon style={icons}/>
             <LinkedInIcon style={icons}/>
+            </div>
             <h2 className="lastheading">All Rights Reseverd by Kabadi Techno Private Limited</h2>
             </div>
-            </div>
-       
+        </div>
         </div>
         </div>
     )
